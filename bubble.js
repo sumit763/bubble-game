@@ -13,7 +13,7 @@ if (highScore !== null) {
 // This function use to make N number of bubbles on the pannel screen
 function make_bubble() {
     var printbubble = "";
-    for (var i = 1; i <= 52; i++) {
+    for (var i = 1; i <= 55; i++) {
         var diffNumber = Math.floor(Math.random() * 10);
         var diffColor = Math.floor(Math.random() * 1000);
         printbubble += `<div style="background-color: #${diffColor};"  class="circal">${diffNumber}</div>`;
@@ -38,7 +38,7 @@ function increaseTime() {
         }
         else {
             clearInterval(timer);
-            document.querySelector("#pannelbottom").innerHTML = `<h1 style ="position: relative;"> Game Over : Your Score : ${score} </h1>`;
+            document.querySelector("#pannelbottom").innerHTML = `<h1 style ="position: relative , color : white;"> Game Over : Your Score : ${score} </h1>`;
         }
     }, 1000)
 

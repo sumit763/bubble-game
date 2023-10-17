@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: "Gilroy";
+     
 }
 
 html,
@@ -17,7 +18,8 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(24, 178, 184);
+    /* background-image: url("bg.jpg"); */
+    background-color: #FBECB2;
 }
 
 .panel {
@@ -40,10 +42,11 @@ h1 {
     justify-content: space-around;
     height: 100px;
     width: 100%;
-    background-color: rgb(209, 197, 23);
+    background-color: #F8BDEB;
 }
 
 .suu {
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -52,10 +55,10 @@ h1 {
 }
 
 .box {
-    color: crimson;
+    color: rgb(255, 255, 255);
     font-weight: 800;
     font-size: 25px;
-    background-color: aliceblue;
+    background-color: #072541;
     padding: 15px;
     border-radius: 20px;
 }
@@ -63,7 +66,7 @@ h1 {
 .pbottom {
     width: 100%;
     height: calc(100% - 100px);
-    background-color: #fff;
+    background-color: #072541;
     gap: 10px;
     padding: 20px;
     display: flex;
@@ -71,10 +74,12 @@ h1 {
 }
 
 .circal {
+    border-radius: 10px solid white;
+    color: #fff;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgb(199, 69, 69);
+    background-color: rgb(241, 104, 12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,4 +92,34 @@ h1 {
     cursor: pointer;
     font-size: 50px;
     color: #fff;
+}
+@media  (max-width : 600px) {
+    .panel{
+        height: 80%;
+        width: 70%;
+    }
+    .circal{
+        width: 30px;
+        height: 30px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .box{
+       font-size: 15px; 
+       padding: 2px;
+    }
+    .circal:hover{
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .suu{
+        font-size: 12px;
+        gap: 1px;
+    }
+    h1{
+        font-size: 20px;
+        position: absolute;
+        margin-left: 34%;
+        margin-top: 10px;
+    }
 }
