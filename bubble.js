@@ -1,5 +1,5 @@
 var hits = -1;
-var timer = 10;
+var timer = 60;
 var score = 0;
 
 // Load the high score from local storage if available
