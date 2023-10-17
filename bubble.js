@@ -38,7 +38,6 @@ function increaseTime() {
         }
         else {
             clearInterval(timer);
- 
             document.querySelector("#pannelbottom").innerHTML = `<h1 style ="position: relative; color: #fff;"> Game Over <br>  Your Score : ${score} </h1>`;
         }
     }, 1000)
