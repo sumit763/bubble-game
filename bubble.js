@@ -1,4 +1,4 @@
-var hits = -1;
+ var hits = -1;
 var timer = 60;
 var score = 0;
 
@@ -38,7 +38,7 @@ function increaseTime() {
         }
         else {
             clearInterval(timer);
-            document.querySelector("#pannelbottom").innerHTML = `<h1 style ="position: relative ,color: #fff;"> Game Over : Your Score : ${score} </h1>`;
+            document.querySelector("#pannelbottom").innerHTML = `<h1 style ="position: relative; color: #fff;"> Game Over  Your Score : ${score} </h1>`;
         }
     }, 1000)
 
