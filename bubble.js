@@ -47,7 +47,7 @@ function increaseTime() {
 
 //  if you hit right bubble it will increase the score by 10 every time 
 function increaseScore() {
-    score += 10;
+    score += 30;
     document.querySelector("#scoreval").textContent = score;
 
     // Update high score if the current score is higher
