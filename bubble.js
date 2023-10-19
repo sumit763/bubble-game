@@ -70,7 +70,7 @@ function match_hits() {
             increaseScore();
             differentHits();
             make_bubble();
-          } else if(match != hits){
+          } else if(match !== hits){
          score -= 5;
          differentHits();
          make_bubble();
